@@ -4,6 +4,7 @@ import { sveltekit } from '@sveltejs/kit/vite';
 const config = {
 	plugins: [sveltekit()],
 	server: {
+		port: 3000,
 		hmr: {
 			clientPort: process.env.HMR_HOST ? 443: 3000,
 			host: process.env.HMR_HOST ? process.env.HMR_HOST.substring("https://".length) : "localhost"
