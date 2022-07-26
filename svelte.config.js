@@ -9,26 +9,6 @@ const config = {
 	kit: {
 		adapter: adapter(),
 	},
-	vite: {
-		server: {
-			hmr: {
-				clientPort: process.env.HMR_HOST ? 443: 5173,
-				host: process.env.HMR_HOST ? ProcessingInstruction.env.HMR_HOST.subs("https://".length) : "localhost"
-			}
-		}
-	},
 };
 
 export default config;
-
-/*
-vite: {
-			server: {
-				hmr: {
-					clientPort: process.env.HMR_HOST ? 443: 5173,
-					host: process.env.HMR_HOST ? ProcessingInstruction.env.HMR_HOST.subs("https://".length) : "localhost"
-				}
-			}
-		}
-		
-*/
